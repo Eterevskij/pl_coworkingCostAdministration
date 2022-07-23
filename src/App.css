@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p, h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background: #f4f4f4;
+  font-family: inter;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  max-width: 1312px;
+  margin: 0 auto;
+}
+
+.сoworkingAdministration {
+  width: 100%;
+}
+
+.сoworkingAdministrationCardWrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-flow: row wrap;
+  margin-left: -16px;
+  margin-right: -16px;
+  row-gap: 32px;
 }
 
-.App-link {
-  color: #61dafb;
+.сoworkingAdministrationCardWrapper>div {
+  display: block;
+  flex: 0 0 50.00000000%;
+  max-width: 50.00000000%;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.coworkingAdministration {
+  overflow-x: hidden;
+}
+
+.cityBlock {
+  padding: 24px 32px;
+  border: 1px solid #BCBEC0;
+  border-radius: 16px;
+  margin-bottom: 40px;
+}
+
+.cityBlockSubitle {
+  font-size: 16px;
+  font-weight: 500;
+  color: #7a7a7a;
+  margin-bottom: 8px;
+}
+
+.cityBlockTitle {
+  font-weight: 600;
+  font-size: 24px;
+  color: #2b2b2b;
+}
+
+@media (max-width: 1920px) {}
+
+@media (max-width: 1280px) {}
+
+@media (max-width: 1024px) {
+  .сoworkingAdministrationCardWrapper {
+    flex-wrap: wrap;
   }
-  to {
-    transform: rotate(360deg);
+
+  .сoworkingAdministrationCardWrapper>div {
+    display: block;
+    flex: 0 0 100.00000000%;
+    max-width: 100.00000000%;
   }
+  
+  .cityBlock {
+    margin-bottom: 32px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .cityBlock {
+    padding: 24px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .cityBlock {
+    padding: 24px 16px;
+    margin-bottom: 24px;
+  }
+
+  .cityBlockTitle {
+    font-size: 20px;
+  }
+
 }

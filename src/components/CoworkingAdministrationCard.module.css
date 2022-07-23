@@ -1,0 +1,198 @@
+.card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 32px;
+}
+
+.header {
+    padding: 24px;
+    border-radius: 12px;
+    background: #f4f4f4;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.headerSubtitle {
+    color: #7a7a7a;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.headerTitle {
+    color: #2b2b2b;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.headerIcon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.table {
+    border-top: 1px solid #E8E8E8;
+    border-bottom: 1px solid #E8E8E8;
+    margin-bottom: 40px;    
+}
+
+.tableItem {
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tableItem + .tableItem {
+    border-top: 1px solid #E8E8E8;
+}
+
+.button {
+    width: 100%;
+    background: #000;
+    color: #fff;
+    border-radius: 8px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.button svg {
+    margin-right: 12px;
+}
+
+.button span {
+    font-family: inter;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.period {
+    font-size: 20px;
+    color: #2b2b2b;
+}
+
+.price {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.tableRight {
+    display: flex;
+    align-items: center;
+}
+
+.discount {
+    color: #fff;
+    background: #7a7a7a;
+    border-radius: 5px;
+    font-weight: 600;
+    padding: 4px 12px;
+    margin-right: 24px;
+}
+
+.card.vip .header {
+    background: linear-gradient(90deg, #4DB663 -3.05%, #6BD681 102.47%);
+}
+
+.card.vip .header > * {
+    color: #fff;
+}
+
+@media (max-width: 1920px) {
+
+    .headerIcon {
+        width: 164px;
+      }
+
+      .card {
+        padding: 24px;
+      }
+
+}
+
+@media (max-width: 1280px) {
+
+    .vip .headerIcon {
+        width: 167px;
+    }
+
+}
+
+@media (max-width: 1024px) {
+
+      .headerTitle {
+        font-size: 24px;
+      }
+
+      .headerIcon {
+        width: 164px;
+      }
+
+      .header {
+        margin-bottom: 32px;
+        overflow: hidden;
+      }
+
+      .tableItem {
+        padding: 16px;
+      }
+
+      .period {
+        font-size: 18px;
+      }
+
+      .discount .word {
+        display: none;
+      }
+
+      .discount {
+        margin-right: 16px;
+      }
+
+      .table {
+        margin-bottom: 32px;
+      }
+
+
+}
+
+@media (max-width: 480px) {
+
+    .card {
+        padding: 24px 16px;
+    }
+
+    .headerIcon {
+        width: 82px;
+        top: 65%;
+        transform: translate(0, -50%);
+    }
+
+    .header {
+        height: 82px;
+        padding: 16px 12px;
+        position: relative;
+    }
+
+    .headerSubtitle {
+        margin-bottom: 4px;
+    }
+
+    .headerSubtitle {
+        font-size: 14px;
+    }
+
+    .headerTitle {
+        font-size: 20px;
+    }
+
+    .vip .headerIcon {
+        width: 130px;
+        top: 50%;
+    }
+
+}
